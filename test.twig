@@ -1,0 +1,16 @@
+My = namespace {
+
+    Class = class {
+        MyField = "twig is cool"
+
+        static print = fn(txt) {
+            native printf(MyField) ; native runs a expression with **NO** error checking!
+            native printf(txt)
+        }
+    }
+
+}
+
+main = fn(argc, argv) {
+    My/Class.print("Heyyyy gamers")
+}

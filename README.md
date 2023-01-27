@@ -10,9 +10,6 @@ programming language written in [rebol](https://en.wikipedia.org/wiki/Rebol)
 ## examples
 
 ```twig
-
-import "thing.twig"
-
 My = namespace {
 
     Class = class {

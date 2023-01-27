@@ -1,13 +1,9 @@
 REBOL [
-  Title: "Twig Parser"
+  Title: "Twig typed program generator"
   Author: "NovaHexyl"
   Rights: "Copyright (C) NovaHexyl. 2023"
   Version: 0.01.0
   Type: 'module
 ]
 
-; does a twig file
-do-twig:  func []
-[
-
-] 
+; this file generates a typed ast from a parsed file
