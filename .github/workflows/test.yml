@@ -1,0 +1,19 @@
+name: Rebol Tester
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+    steps:
+    - uses: actions/checkout@v2
+    - uses: oldes/install-rebol@v3.10.2
+    - name: Test the compiler
+      run: ./rebol3 twig test.twig
+      shell: bash
